@@ -1,71 +1,77 @@
-<!DOCTYPE html>
-<html lang=" id">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Warkop Neng Widya - Website UMKM/</title>
-        <link rel="stylesheet" href="css/style.css"/>
-    </head>
-    <body>
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warkop Neng Widya - Website UMKM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
-        <!--Navigasi-->
-        <nav>
-            <a href="#beranda">Beranda</a>
-            <a href="#tentang-kami">Tentang Kami</a>
-            <a href="#kontak-singkat">Kontak Singkat</a>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigasi utama">
+            <a class="brand" href="index.html">Warkop Neng Widya</a>
+            <ul>
+                <li><a aria-current="page" href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="#kontak">Kontak Singkat</a></li>
+            </ul>
         </nav>
+    </header>
 
-        <main class="page">
-
-            <!--Beranda-->
-    
-            <section class="hero">
-                <p class="eyebrow">UMKM Pekalongan</p>
-                <h1>Warkop Neng Widya</h1>
-                <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-                <button id="promoButton" type="button">Lihat promo hari ini</button>
-            </section>
-
-            <!--Produk Unggulan-->
-
-            <section aria-labelledby="produk-title">
-                <h2 id="produk-title">Produk Unggulan</h2>
-                <ul class="product">
-                    <li>Kopi Kenangan Mantan - 27.000</li>
-                    <li>Ketan Susu Keju - 25.000</li>
-                </ul>
-            </section>
-
-            <!--Tentang Kami-->
-            <section class="info" id="tentang-kami">
-            <h2>Tentang Kami</h2>
-            <p><strong>Jam Buka:</strong> 09.00–21.00</p>
-            <p><strong>Lokasi:</strong> Pekalongan, Jawa Tengah</p>
+    <main id="konten" class="page">
+        <!-- Pertemuan 1: Landing Page -->
+        <section class="hero" id="beranda">
+            <p class="eyebrow">UMKM Pekalongan</p>
+            <h1>Warkop Neng Widya</h1>
+            <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
+            <button id="promoButton" type="button">
+                Lihat Promo Warkop Neng Widya
+            </button>
+            <p id="promoMessage" aria-live="polite"></p>
         </section>
 
-        <!--Kontak Singkat-->
-        <section class="info" id="kontak-singkat">
-            <h2>Kontak Singkat</h2>
+        <section aria-labelledby="produk-title">
+            <h2 id="produk-title">Produk Unggulan</h2>
+            <ul class="products">
+                <li>Kopi Susu Gula Aren - Rp25.000</li>
+                <li>Roti Bakar Cokelat Keju - Rp22.000</li>
+                <li>Kentang Goreng - Rp18.000</li>
+            </ul>
+            <p><a href="produk.html">Lihat informasi produk Warkop Neng Widya</a></p>
+        </section>
 
+        <!-- Pertemuan 2: Kontak Singkat -->
+        <section id="kontak" aria-labelledby="kontak-title">
+            <h2 id="kontak-title">Kontak Singkat</h2>
             <p>
-                <strong>Alamat:</strong>
-                Pekalongan, Jawa Tengah
+            Warkop Neng Widya merupakan warung kopi di Pekalongan
+            yang menyediakan minuman dan makanan untuk menemani 
+            waktu santai bersama teman.
             </p>
 
-            <p>
-                <strong>Jam Layanan</strong>
-                09.00-21.00
-            </p>
-
-            <p>
-                <strong>Kontak:</strong>
-                <a href="https://wa.me//6285647941963">
-                Hubungi Warkop Neng Widya melalui WhatsApp
+            <ul>
+                <li>Lokasi: Pekalongan, Jawa Tengah</li>
+                <li>Jam layanan: Senin–Sabtu, pukul 08.00–17.00 WIB</li>
+            <li>
+                Kontak:
+                <a href="https://wa.me/6281234567890">
+                    Hubungi Warkop Neng Widya melalui WhatsApp
                 </a>
-            </p>
-        </section>
+            </li>
 
+
+                </li>
+            </ul>
+        </section>
     </main>
-        <script src="js/script.js"></script>
-    </body>
-    </html>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Warkop Neng Widya. Tempat santai dan menikmati aneka minuman dan makanan ringan.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

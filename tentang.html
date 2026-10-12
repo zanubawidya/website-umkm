@@ -1,45 +1,49 @@
-<!DOCTYPE html>
-<html lang=" id">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Tentang Kami- Warkop Neng Widya/</title>
-        <link rel="stylesheet" href="css/style.css"/>
-    </head>
-    <body>
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tentang Warkop Neng Widya - Website UMKM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
 
-        <!--Navigasi-->
-        <nav>
-            <a href="#beranda">Beranda</a>
-            <a href="#tentang-kami">Tentang Kami</a>
-            <a href="index.html#kontak-singkat">Kontak Singkat</a>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigasi utama">
+           <a class="brand" href="index.html">Warkop Neng Widya</a>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a aria-current="page" href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="index.html#kontak">Kontak Singkat</a></li>
+            </ul>
         </nav>
+    </header>
 
-        <main class="page">
+    <main id="konten" class="page">
+        <section aria-labelledby="tentang-title">
+            <p class="eyebrow">Cerita Usaha</p>
+            <h1 id="tentang-title">Tentang Warkop Neng Widya</h1>
+            <p>Warkop Neng Widya merupakan warung kopi yang menyediakan aneka minuman dan makanan ringan untuk menemani waktu santai, belajar, dan berkumpul bersama teman.</p>
 
-            <!--Tentang Kami-->
-            <section class="info">
-                <p class="eyebrow">UMKM Pekalongan</p>
+            <img src="assets/image/suasana 3.jpg"
+                 alt="Suasana dan produk Warkop Neng Widya">
+        </section>
 
-                <h1>Tentang Kami</h1>
+        <section aria-labelledby="nilai-title">
+            <h2 id="nilai-title">Nilai yang Kami Bawa</h2>
+            <ul>
+                <li>Bahan lokal dari petani sekitar.</li>
+                <li>Proses sederhana dan transparan.</li>
+                <li>Pelayanan ramah untuk pelanggan harian.</li>
+            </ul>
+        </section>
+    </main>
 
-                <p>
-                    Warkop Neng Widya adalah UMKM yang menyediakan kopi lokal untuk teman belajar, bekerja, dan berdiskusi.
-                </p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Warkop Neng Widya. Tempat santai dan menikmati aneka minuman dan makanan ringan.</p>
 
-                <p>
-                    <strong>Jam Buka:</strong>
-                    09.00-21.00
-                </p>
-
-                <p>
-                    <strong>Lokasi:</strong>
-                    Pekalongan, Jawa Tengah
-                </p>
-        
-            </section>
-
-            <main>
-                <script src="js/script.js"></script>
-            </body>
-            </html>
+    </footer>
+</body>
+</html>

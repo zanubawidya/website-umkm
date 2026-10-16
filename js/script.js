@@ -1,19 +1,22 @@
-// const promoButton = document.querySelector("#promoButton");
+const promoButton = document.querySelector("#promoButton");
 
-// promoButton.addEventListener("click", () => {
-//   promoButton.textContent = "Promo: Beli 2 gratis tester!";
-//   console.log("Promo Kopi Nusa berhasil ditampilkan.");
-// });
+promoButton.addEventListener("click", () => {
+  promoButton.textContent = "Promo: Beli 2 gratis tester!";
+  console.log("Promo Kopi Nusa berhasil ditampilkan.");
+});
 
+const form = document.querySelector("#form-kontak");
+const preview = document.querySelector("#preview-form");
 
-const promoButton = document.getElementById("promoButton");
-const promoMessage = document.getElementById("promoMessage");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-if (promoButton && promoMessage) {
-    promoButton.addEventListener("click", function () {
-        promoMessage.textContent =
-        "Terima kasih sudah mengunjungi Warkop Neng Widya! " +
-        "Yuk, nikmati minuman favoritmu hari ini.";
-
-    });
-}
+  const data = new FormData(form);
+  preview.textContent = [
+    `Nama: ${data.get("nama")}`,
+    `Email: ${data.get("email")}`,
+    `Paket: ${data.get("paket")}`,
+    `Topik: ${data.get("topik")}`,
+    `Pesan: ${data.get("pesan")}`,
+  ].join("\n");
+});

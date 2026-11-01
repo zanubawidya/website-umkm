@@ -1,11 +1,11 @@
 :root {
-  --color-primary: #6f3b1f;
-  --color-primary-strong: #4b2715;
-  --color-text: #2f2118;
-  --color-muted: #6b5b52;
+  --color-primary: #581c25;        
+  --color-primary-strong: #3b1218; 
+  --color-text: #261c14;           
+  --color-muted: #6b5b52;          
   --color-surface: #ffffff;
-  --color-surface-soft: #fff8f0;
-  --color-border: #dccbbc;
+  --color-surface-soft: #faf5f5;   
+  --color-border: #e2cbd0;         
   --color-focus: #1d4ed8;
   --space-1: 0.5rem;
   --space-2: 0.75rem;
@@ -14,12 +14,12 @@
   --space-5: 2rem;
   --radius-sm: 0.5rem;
   --radius-md: 0.875rem;
-  --shadow-card: 0 0.5rem 1.5rem rgb(47 33 24 / 0.1);
-  --color-accent: #d97706;      
-  --color-badge-bg: #fef3c7;    
-  --color-badge-text: #92400e;  
-  --space-xl: 2.5rem;          
-  --radius-lg: 16px;            
+  --shadow-card: 0 0.5rem 1.5rem rgb(88 28 37 / 0.1);
+  --color-accent: #991b1b;         
+  --color-badge-bg: #fee2e2;       
+  --color-badge-text: #991b1b;     
+  --space-xl: 2.5rem;           
+  --radius-lg: 16px;              
 }
 
 *,
@@ -112,13 +112,35 @@ a:hover {
   margin: 0 var(--space-2) var(--space-1) 0; 
 }
 
+.nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.nav a:hover {
+  color: #581c25;
+  background: #fcf0f2;
+}
+
 .nav a[aria-current="page"] {
   padding: var(--space-1) var(--space-2);
-  color: var(--color-primary-strong);
+  color: #ffffff !important;
   font-weight: 700;
   text-decoration: none;
-  background: #fef3c7;
+  background: #581c25;
   border-radius: var(--radius-sm);
+}
+
+.eyebrow { 
+  color: #581c25; 
+  font-weight: 800; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase; 
+  font-size: 0.85rem;
 }
 
 .page { 
@@ -194,13 +216,14 @@ button:hover {
 }
 
 .hero button { 
-  color: var(--color-text); 
-  background: #fef3c7; 
+  color: #581c25; 
+  background: #ffffff; 
+  font-weight: 800;
 }
 
 .hero button:hover { 
-  color: var(--color-text); 
-  background: #fde68a; 
+  color: #3b1218; 
+  background: #fdf2f2; 
 }
 
 .btn-primary {
@@ -392,4 +415,38 @@ footer,
 @media (min-width: 60rem) {
   .nav { flex-direction: row; align-items: center; justify-content: space-between; }
   .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.js-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-4);
+}
+
+.js-product-card {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.stock-badge {
+  display: inline-flex;
+  margin-block-start: var(--space-2);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.stock-badge.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.stock-badge.empty {
+  background: #fee2e2;
+  color: #991b1b;
 }

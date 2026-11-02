@@ -26,50 +26,60 @@
     </header>
 
     <main id="konten" class="page">
-        <section class="hero" id="beranda" aria-labelledby="hero-title">
-    <div class="hero-content">
-        <p class="eyebrow">UMKM Pekalongan</p>
-        <h1 id="hero-title">Warkop Neng Widya</h1>
-        <span class="badge-highlight">Menu Favorit</span>
-        <a href="#" class="button button-accent">Pesan Sekarang</a>
-        <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-        <button id="promoButton" type="button">
-        Lihat Promo Warkop Neng Widya
-    </button>
-    <p id="promoMessage" aria-live="polite"></p>
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <p class="eyebrow">UMKM Pekalongan</p>
+            <h1 id="hero-title">Warkop Neng Widya</h1>
+            <span class="badge-highlight">Menu Favorit</span>
+            <a href="#" class="button button-accent">Pesan Sekarang</a>
+            <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
+            <button id="promoButton" type="button">
+                Lihat Promo Warkop Neng Widya
+            </button>
+            <p id="promoMessage" aria-live="polite"></p>
+        </div>
+        <div>
+            <img class="hero-image" src="assets/image/maroon.jpg" width="640" height="360" alt="Suasana Warkop Neng Widya">
+        </div>
+    </section>
 
-    <img class="hero-image" src="assets/image/maroon.jpg" width="640" height="360" alt="Suasana Warkop Neng Widya">
-</section>
+       <section aria-labelledby="produk-title">
+            <h2 id="produk-title">Menu Favorit</h2>
+            
+            <div class="product-grid" style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 1.5rem;">
+                <div class="product-card" style="margin: 0;">
+                    <h3 style="margin-top: 0; font-size: 1.1rem;">Kopi Susu Gula Aren</h3>
+                    <p class="price" style="font-weight: bold; color: #581c25;">Rp25.000</p>
+                </div>
+                <div class="product-card" style="margin: 0;">
+                    <h3 style="margin-top: 0; font-size: 1.1rem;">Roti Bakar Cokelat Keju</h3>
+                    <p class="price" style="font-weight: bold; color: #581c25;">Rp22.000</p>
+                </div>
+                <div class="product-card" style="margin: 0;">
+                    <h3 style="margin-top: 0; font-size: 1.1rem;">Kentang Goreng</h3>
+                    <p class="price" style="font-weight: bold; color: #581c25;">Rp18.000</p>
+                </div>
+                <div class="product-card" style="margin: 0;">
+                    <h3 style="margin-top: 0; font-size: 1.1rem;">Croissant Butter</h3>
+                    <p class="price" style="font-weight: bold; color: #581c25;">Rp24.000</p>
+                </div>
+            </div>
 
-        <section aria-labelledby="produk-title">
-            <h2 id="produk-title">Produk Unggulan</h2>
-            <ul class="products">
-                <li>Kopi Susu Gula Aren - Rp25.000</li>
-                <li>Roti Bakar Cokelat Keju - Rp22.000</li>
-                <li>Kentang Goreng - Rp18.000</li>
-            </ul>
-            <p><a href="produk.html">Lihat informasi produk Warkop Neng Widya</a></p>
+            <p><a href="produk.html">Lihat informasi produk Warkop Neng Widya selengkapnya</a></p>
         </section>
 
-        <section id="kontak" aria-labelledby="kontak-title">
-            <h2 id="kontak-title">Kontak Singkat</h2>
+        <section id="kontak" aria-labelledby="kontak-title" class="product-card" style="background-color: var(--color-surface, #ffffff); padding: 1.5rem; border-radius: 8px;">
+            <h2 id="kontak-title" style="margin-top: 0;">Kontak Singkat</h2>
             <p>
-            Warkop Neng Widya merupakan warung kopi di Pekalongan
-            yang menyediakan minuman dan makanan untuk menemani 
-            waktu santai bersama teman.
+                Warkop Neng Widya adalah warung kopi pilihan di Pekalongan yang menyediakan aneka minuman dan makanan nikmat untuk menemani waktu santai, belajar, maupun bekerja Anda.
             </p>
 
-            <ul>
-                <li>Lokasi: Pekalongan, Jawa Tengah</li>
-                <li>Jam layanan: Senin–Sabtu, pukul 08.00–17.00 WIB</li>
-            <li>
-                Kontak:
-                <a href="https://wa.me/6281234567890">
-                    Hubungi Warkop Neng Widya melalui WhatsApp
-                </a>
-            </li>
-
-
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><strong> Lokasi:</strong> Pekalongan, Jawa Tengah</li>
+                <li><strong> Jam Layanan:</strong> Senin–Sabtu, pukul 08.00–17.00 WIB</li>
+                <li>
+                    <strong> Kontak:</strong> 
+                    <a href="https://wa.me/6281234567890">Hubungi Warkop Neng Widya melalui WhatsApp</a>
                 </li>
             </ul>
         </section>

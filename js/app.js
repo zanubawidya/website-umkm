@@ -3,9 +3,10 @@
 console.log("P09 JavaScript aktif");
 
 const produkUmkm = [
-  { nama: "Arabika Gayo", kategori: "Kopi", harga: 85000, stok: 12 },
-  { nama: "Robusta Temanggung", kategori: "Kopi", harga: 65000, stok: 4 },
-  { nama: "Paket Seduh", kategori: "Bundling", harga: 125000, stok: 0 },
+  { nama: "Kopi Susu Gula Aren", kategori: "Minuman", harga: 25000, stok: 12, deskripsi: "Kopi lokal dengan cita rasa khas." },
+  { nama: "Roti Bakar", kategori: "Makanan", harga: 22000, stok: 4, deskripsi: "Roti bakar hangat yang gurih." },
+  { nama: "Kentang Goreng Renyah", kategori: "Camilan", harga: 18000, stok: 0, deskripsi: "Kentang goreng hangat dan renyah." },
+  { nama: "Croissant Butter", kategori: "Pastry", harga: 24000, stok: 15, deskripsi: "Pastry renyah dengan aroma mentega." },
 ];
 
 console.table(produkUmkm);

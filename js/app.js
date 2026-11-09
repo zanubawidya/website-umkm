@@ -3,7 +3,7 @@
 console.log("P09 JavaScript aktif");
 
 const produkUmkm = [
-  // 1. TAMBAHKAN properti 'unggulan: true' di sini
+ 
   { nama: "Kopi Susu Gula Aren", kategori: "Minuman", harga: 25000, stok: 12, deskripsi: "Kopi lokal dengan cita rasa khas.", unggulan: true },
   { nama: "Roti Bakar", kategori: "Makanan", harga: 22000, stok: 4, deskripsi: "Roti bakar hangat yang gurih.", unggulan: false },
   { nama: "Kentang Goreng Renyah", kategori: "Camilan", harga: 18000, stok: 0, deskripsi: "Kentang goreng hangat dan renyah.", unggulan: false },
@@ -20,7 +20,6 @@ function formatRupiah(nilai) {
   }).format(nilai);
 }
 
-// 2. PERBAIKI bagian ini (hapus '.format' karena formatRupiah adalah fungsi)
 console.log(formatRupiah(produkUmkm[0].harga));
 
 function statusStok(stok) {
@@ -49,8 +48,6 @@ function labelKategori(kategori) {
       return "Produk UMKM";
   }
 }
-
-// 3. SESUAIKAN template kartu produk agar rapi saat dirender ke HTML
 function buatKartuProduk(produk) {
   const status = statusStok(produk.stok);
 
